@@ -24,8 +24,8 @@ const About = () => {
   return (
     <section id="aboutus" className="mt-36 container mx-auto">
       <h1 className="lg:text-5xl text-center">About Us</h1>
-      <div className="grid grid-cols-3 gap-10 mt-14">
-        <div className="col-span-2 flex flex-col gap-8 justify-center">
+      <div className="grid grid-cols-5 gap-10 mt-14">
+        <div className="col-span-3 flex flex-col gap-8 justify-center">
           <div className="flex flex-col gap-2">
             <h2 className="text-clementine">About Ro&apos;ya</h2>
             <p>
@@ -44,7 +44,7 @@ const About = () => {
           </p>
           <Button variant="getStarted">Get Started &#8599;</Button>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="col-span-2 flex flex-col gap-4">
           {features.map((feature) => (
             <AboutCards
               key={feature.title}

@@ -7,19 +7,19 @@ const Contact = () => {
       icon: "../assets/imgs/email.png",
       title: "Chat With Us",
       content: "Chat with our friendly team",
-      method: "roya@gmail.com",
+      method: "Royaco2023@gmail.com",
     },
     {
       icon: "../assets/imgs/phone-call.png",
       title: "Call Us",
-      content: "fron sun to thr from 10 am to 10 pm",
-      method: "+2xxxxxxxxxx",
+      content: "From sun to thr from 10 am to 10 pm",
+      method: "+20 106 582 0391",
     },
     {
       icon: "../assets/imgs/visitor.png",
       title: "Visit Us",
-      content: "Visit Our Team",
-      method: "location",
+      content: "visit and have a nice talk with our team",
+      method: "Cairo, Egypt",
     },
   ];
   return (
