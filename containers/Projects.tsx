@@ -39,6 +39,18 @@ const Projects = () => {
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
     },
+    {
+      img: "../assets/imgs/aventura.png",
+      title: "Aventura Trips",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+    },
+    {
+      img: "../assets/imgs/orkodo.png",
+      title: "Orkodo ",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+    },
   ];
   return (
     <section id="projects" className="mt-36 container">
