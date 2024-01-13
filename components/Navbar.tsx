@@ -6,9 +6,19 @@ import { Button } from "./ui/button";
 import { FiMenu } from "react-icons/fi";
 import { MdLanguage } from "react-icons/md";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const navItems = [
+    { href: "/", title: "Home" },
+    { href: "/about-us", title: "About Us" },
+    { href: "/features", title: "Features" },
+    { href: "/solution", title: "Solution" },
+  ];
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const pathname = usePathname();
+  const isActive = (href: string) => href === pathname;
   const handleToggleNavbar = () => {
     setIsOpen(!isOpen);
   };
@@ -38,18 +48,19 @@ const Navbar = () => {
           >
             <div className="mx-auto">
               <ul className="flex flex-col lg:flex-row items-center gap-5">
-                <Link href="/">
-                  <li>Home</li>
-                </Link>
-                <Link href="/">
-                  <li>About Us</li>
-                </Link>
-                <Link href="/">
-                  <li>Features</li>
-                </Link>
-                <Link href="/">
-                  <li>Solution</li>
-                </Link>
+                {navItems.map((item) => (
+                  <Link key={item.title} href={item.href}>
+                    <li
+                      className={cn(
+                        "cursor-pointer p-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br from-[#f7bd91] to-[#EE7214] rounded-md",
+                        isActive(item.href) &&
+                          "text-transparent bg-clip-text bg-gradient-to-b from-[#f7bd91] to-[#EE7214]"
+                      )}
+                    >
+                      {item.title}
+                    </li>
+                  </Link>
+                ))}
               </ul>
             </div>
           </div>
