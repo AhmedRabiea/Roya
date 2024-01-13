@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col bg-bunker text-white py-4 mt-36">
       <div className="container mx-auto border-b-2 flex flex-col gap-5">
-        <div className="grid grid-cols-3 items-center pb-7">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-0 items-center pb-7">
           <div className="col-span-1 flex flex-col gap-2">
             <Link href="/">
               <img
@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
           </div>
           <ul className="">
-            <h1 className="underline">Partner</h1>
+            <h1 className="underline text-2xl lg:text-4xl">Partner</h1>
             <Link href="/">
               <li>Our Parnter</li>
             </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
           </ul>
           <div className="flex flex-col gap-3">
-            <h1>Ro&apos;ya News Letter</h1>
+            <h1 className="text-2xl lg:text-4xl">Ro&apos;ya News Letter</h1>
             <div className="flex gap-2">
               <Input placeholder="Enter Your Email" />
               <Button variant="getStarted">Subscribe</Button>
@@ -40,7 +40,7 @@ const Footer = () => {
             <p className="text-gray-300">
               By Subscribing, you agree to our Privacy Policy
             </p>
-            <div className="flex gap-4 items-center text-2xl">
+            <div className="flex gap-2 md:gap-4 items-center text-xl md:text-2xl">
               <div className="border-2 rounded-lg border-white/90 p-2">
                 <FaFacebook />
               </div>

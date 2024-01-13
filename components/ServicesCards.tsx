@@ -20,8 +20,8 @@ const ServicesCards = ({ icon, title, content }: SeriveCardsProps) => {
         className="w-20 h-20 flex justify-center"
       />
 
-      <h2>{title}</h2>
-      <p>{content}</p>
+      <h1 className="text-lg lg:text-2xl">{title}</h1>
+      <p className="text-sm lg:text-lg text-gray-300">{content}</p>
     </div>
   );
 };

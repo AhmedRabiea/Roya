@@ -14,7 +14,7 @@ const ProjectsCards = ({ img, title, content }: ProjectsProps) => {
       <img src={img} alt="Roya-Projects" className="w-full object-fill" />
       <h1>{title}</h1>
       <p className="text-clementine">By| Ro&apos;ya</p>
-      <p>{content}</p>
+      <p className="text-gray-300">{content}</p>
       <div className="flex justify-between items-center">
         <Button>Know More</Button>
         <FaRegStar />

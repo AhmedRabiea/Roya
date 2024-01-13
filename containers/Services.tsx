@@ -29,17 +29,17 @@ const Services = () => {
   return (
     <section id="services" className="mt-36 container">
       <div className="flex flex-col gap-4">
-        <h1 className="text-3xl text-clementine">Our Services</h1>
-        <h1 className="text-5xl">
+        <h1 className="lg:text-3xl text-clementine">Our Services</h1>
+        <h1 className="lg:text-5xl">
           <span className="text-clementine">Unleash</span> The Power Of Your Own
           Business
         </h1>
-        <p className="text-xl">
+        <p className="lg:text-xl text-gray-300">
           Experience the advantages of having your own business!
           <br /> Stay relevant and competitive with our technological skills.
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {servicesCards.map((service, idx) => (
           <ServicesCards
             key={service.title}

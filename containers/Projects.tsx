@@ -53,14 +53,14 @@ const Projects = () => {
     },
   ];
   return (
-    <section id="projects" className="mt-36 container">
+    <section id="projects" className="mt-20 lg:mt-36 container">
       <div className="flex flex-col gap-4 text-center">
-        <h2 className="text-3xl">-Projects</h2>
-        <h1 className="text-5xl">
+        <h2 className="text-xl lg:text-3xl">-Projects</h2>
+        <h1 className="text-2xl lg:text-5xl">
           <span className="text-clementine">Ro&apos;ya</span> Projects
         </h1>
       </div>
-      <div className="grid grid-cols-4 gap-x-5 gap-y-10 mt-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10 mt-10">
         {projectsCards.map((project) => (
           <ProjectsCards
             key={project.title}
