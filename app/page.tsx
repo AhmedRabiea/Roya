@@ -1,5 +1,6 @@
 import Ambitious from "@/components/Ambitious";
 import { Button } from "@/components/ui/button";
+import About from "@/containers/About";
 import Contact from "@/containers/Contact";
 import Projects from "@/containers/Projects";
 import Services from "@/containers/Services";
@@ -59,31 +60,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="aboutus" className="mt-36 container mx-auto">
-        <h1 className="lg:text-5xl text-center">About Us</h1>
-        <div className="grid grid-cols-2 gap-4 mt-14">
-          <img src="" alt="about-us" className="w-full" />
-          <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-2">
-              <h2 className="text-clementine">About Ro&apos;ya</h2>
-              <p>
-                Welcome to <span className="text-clementine">Ro&apos;ya</span>,
-                where technology meets precision and affordability. <br />
-                We specialize in delivering cutting-edge solutions with a
-                commitment to timely project completion.
-                <br />
-              </p>
-            </div>
-            <p>
-              Our team&apos;s passion and expertise ensure your business stays
-              ahead in the ever-evolving tech landscape.
-              <br /> Experience excellence, punctuality, and cost-effectiveness
-              – welcome to the forefront of innovation with Ro&apos;ya.
-            </p>
-            <Button variant="getStarted">Get Started &#8599;</Button>
-          </div>
-        </div>
-      </section>
+      <About />
       <Services />
       <Projects />
       <Ambitious />
