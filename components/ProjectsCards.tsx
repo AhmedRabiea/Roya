@@ -6,9 +6,10 @@ type ProjectsProps = {
   img: string;
   title: string;
   content: string;
+  href: string;
 };
 
-const ProjectsCards = ({ img, title, content }: ProjectsProps) => {
+const ProjectsCards = ({ img, title, content, href }: ProjectsProps) => {
   return (
     <div className="flex flex-col gap-4">
       <img src={img} alt="Roya-Projects" className="w-full object-fill" />
@@ -16,7 +17,9 @@ const ProjectsCards = ({ img, title, content }: ProjectsProps) => {
       <p className="text-clementine">By| Ro&apos;ya</p>
       <p className="text-gray-300">{content}</p>
       <div className="flex justify-between items-center">
-        <Button>Know More</Button>
+        <a href={href}>
+          <Button>Know More</Button>
+        </a>
         <FaRegStar />
       </div>
     </div>
