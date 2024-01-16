@@ -8,48 +8,49 @@ const Projects = () => {
       title: "almotarjim Platform",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+      href: "http://almotarjim.net/",
     },
     {
       img: "../assets/imgs/qarar.png",
       title: "Qarar Platform",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+      href: "https://qarar-nu.vercel.app/",
     },
     {
       img: "../assets/imgs/vega.png",
       title: "Vega Project",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+      href: "https://vega-indol.vercel.app/",
     },
     {
       img: "../assets/imgs/qaimna.png",
       title: "Qaimna Project",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+      href: "https://qaimna.com/",
     },
     {
       img: "../assets/imgs/sakina.png",
       title: "Sakina Project",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+      href: "https://sakina.vercel.app/en",
     },
     {
       img: "../assets/imgs/basira.png",
       title: "Basira Project",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+      href: "https://basira.vercel.app/",
     },
     {
       img: "../assets/imgs/aventura.png",
       title: "Aventura Trips",
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
-    },
-    {
-      img: "../assets/imgs/orkodo.png",
-      title: "Orkodo ",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum ipsam iste exercitationem.",
+      href: "http://avventuraeg.net/",
     },
   ];
   return (
@@ -67,6 +68,7 @@ const Projects = () => {
             img={project.img}
             title={project.title}
             content={project.content}
+            href={project.href}
           />
         ))}
       </div>
