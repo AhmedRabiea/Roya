@@ -1,22 +1,23 @@
 import AboutCards from "@/components/AboutCards";
 import { Button } from "@/components/ui/button";
 import React from "react";
+import { HiPaperAirplane, HiShieldCheck, HiStar } from "react-icons/hi";
 
 const About = () => {
   const features = [
     {
-      icon: "../assets/imgs/Star.png",
+      Icon: <HiStar />,
       title: "Ideation",
       content: "Conducting Product Discovery and Product Research",
     },
     {
-      icon: "../assets/imgs/Shield.png",
+      Icon: <HiShieldCheck />,
       title: "100% Secure",
       content:
         "We take proactive steps make sure your information and transactions are secure.",
     },
     {
-      icon: "../assets/imgs/Send.png",
+      Icon: <HiPaperAirplane className="rotate-45" />,
       title: "Maintenance",
       content: "Co-managing the app with your technology team",
     },
@@ -48,7 +49,7 @@ const About = () => {
           {features.map((feature) => (
             <AboutCards
               key={feature.title}
-              icon={feature.icon}
+              Icon={feature.Icon}
               title={feature.title}
               content={feature.content}
             />

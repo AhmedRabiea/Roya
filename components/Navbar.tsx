@@ -27,6 +27,10 @@ const Navbar = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex gap-5">
+            <Button className="lg:hidden" onClick={handleToggleNavbar}>
+              <span className="sr-only">Open Main Menu</span>
+              <FiMenu />
+            </Button>
             <Link href="/">
               <img
                 src="../assets/imgs/logo.svg"
@@ -34,16 +38,12 @@ const Navbar = () => {
                 className="w-36"
               />
             </Link>
-            <Button className="lg:hidden" onClick={handleToggleNavbar}>
-              <span className="sr-only">Open Main Menu</span>
-              <FiMenu />
-            </Button>
           </div>
 
           <div
             className={cn(
-              "nav flex items-center justify-between w-full lg:w-auto fixed lg:static left-0 right-0 top-16",
-              isOpen && "hidden"
+              "nav lg:flex items-center justify-between w-full lg:w-auto fixed lg:static left-0 right-0 top-16 bg-bunker",
+              !isOpen && "hidden"
             )}
           >
             <div className="mx-auto">

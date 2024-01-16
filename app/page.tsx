@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className=" text-white min-h-screen mt-20">
       <section id="hero" className="grid lg:grid-cols-3 justify-center">
-        <div className="lg:col-span-2 flex flex-col gap-8 pl-32">
+        <div className="lg:col-span-2 flex flex-col gap-8 px-2 lg:pl-32">
           <div className="px-4 py-2 bg-gradient-to-br from-[#272727] to-[#11101D] rounded-lg font-poppins text-2xl w-fit">
             <div className="flex items-center gap-2">
               <img src="/assets/imgs/Discount.svg" alt="" />
@@ -17,7 +17,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            <div className="lg:absolute border-2 border-clementine rounded-full flex w-24 h-24 right-60 hover:text-clementine hover:border-gray-300 hover:cursor-pointer">
+            <div className="lg:absolute border-2 border-clementine rounded-full flex w-24 h-24 right-24 hover:text-clementine hover:border-gray-300 hover:cursor-pointer">
               <div className="m-auto">
                 Get &#8599;
                 <br /> Started
@@ -53,11 +53,9 @@ export default function Home() {
             alt="roya"
             className="absolute bottom-60 left-56"
           />
-          <img
-            src="../assets/imgs/slider.svg"
-            alt="Roya-Slider"
-            className="w-full"
-          />
+          <div className="">
+            <img src="../assets/imgs/slider.svg" alt="Roya-Slider" />
+          </div>
         </div>
       </section>
       <About />
