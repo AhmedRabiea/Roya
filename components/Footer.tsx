@@ -27,7 +27,7 @@ const Footer = () => {
             <Link href="/">
               <li>Our Parnter</li>
             </Link>
-            <Link href="/">
+            <Link href="http://almotarjim.net/">
               <li>Become One Of Our Partners</li>
             </Link>
           </ul>

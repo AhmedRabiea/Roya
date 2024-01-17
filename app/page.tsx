@@ -24,17 +24,20 @@ export default function Home() {
               </div>
             </div>
             <h1 className="lg:text-6xl">
-              The Next <br />
-              <span className="text-transparent font-extrabold bg-clip-text bg-gradient-to-b from-[#f7bd91] to-[#EE7214]">
-                Generation
+              Innovating <br />
+              <span className="text-transparent font-extrabold bg-clip-text bg-gradient-to-b from-[#f7bd91] to-[#EE7214] ">
+                Tomorrow&apos;s
               </span>{" "}
-              <br /> Payment Method.
+              <br /> Solutions Today
             </h1>
           </div>
-          <p className="font-poppins text-2xl">
-            Our team of experts uses a methodology to identify
-            <br /> the credit cards most likely to fit your needs.
-            <br /> We examine annual percentage rates, annual fees.
+          <p className="font-poppins text-xl">
+            Our team of seasoned professionals in software engineering,
+            <br /> design, and project management, we bring a wealth of
+            experience to every project.
+            <br /> Our commitment to excellence is evident in the seamless
+            integration of creativity
+            <br /> and functionality in our software solutions.
           </p>
         </div>
         <div className="lg:col-span-1 relative">

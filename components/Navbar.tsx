@@ -4,16 +4,17 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { FiMenu } from "react-icons/fi";
-import { MdLanguage } from "react-icons/md";
+import { MdDarkMode, MdLanguage } from "react-icons/md";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import { Switch } from "./ui/switch";
 
 const Navbar = () => {
   const navItems = [
     { href: "/", title: "Home" },
-    { href: "/about-us", title: "About Us" },
-    { href: "/features", title: "Features" },
-    { href: "/solution", title: "Solution" },
+    { href: "#about", title: "About Us" },
+    { href: "#services", title: "Services" },
+    { href: "#contact", title: "Contact Us" },
   ];
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -64,9 +65,15 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <div className="actions flex flex-wrap items-center gap-2">
-            <MdLanguage />
-            <span>Language</span>
+          <div className="flex flex-wrap gap-5">
+            <div className="actions flex flex-wrap items-center gap-2">
+              <MdLanguage />
+              <span className="hidden md:flex">Language</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <Switch />
+              <MdDarkMode />
+            </div>
           </div>
         </div>
       </div>
